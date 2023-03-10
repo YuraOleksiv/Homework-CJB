@@ -11,7 +11,7 @@ public class Main {
         double d2 = 233.7203685477;
         float f1 = -7.95f;
         float f2 = 65.254f;
-        
+
         System.out.println();
         System.out.printf("initial byte variables: %d, %d%n", b1, b2);
         System.out.printf("initial short variables: %d, %d%n", s1, s2);
