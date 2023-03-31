@@ -1,10 +1,18 @@
 import java.util.ArrayList;
 
 public class MyList<T extends Number> {
-    private ArrayList<T> myList;
+    private final ArrayList<T> myList;
 
     public MyList() {
         myList = new ArrayList<>();
+    }
+
+    public MyList(ArrayList<T> myList) {
+        this.myList = myList;
+    }
+
+    public ArrayList<T> getMyList() {
+        return myList;
     }
 
     public void addElement(T element) {
@@ -15,22 +23,26 @@ public class MyList<T extends Number> {
         return myList.get(n);
     }
 
+// Task 1) Methods, which return the largest and smallest values in the ArrayList
+
     public T largest() {
         T maxSoFar = myList.get(0);
         for (T i : myList) {
             if (maxSoFar.doubleValue() < i.doubleValue()) {
                 maxSoFar = i;
             }
-        } return maxSoFar;
+        }
+        return maxSoFar;
     }
 
     public T smallest() {
-        T minSoFar= myList.get(0);
+        T minSoFar = myList.get(0);
         for (T i : myList) {
             if (minSoFar.doubleValue() > i.doubleValue()) {
                 minSoFar = i;
             }
-        } return minSoFar;
+        }
+        return minSoFar;
     }
 
     @Override
