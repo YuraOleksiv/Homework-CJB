@@ -1,5 +1,8 @@
 package product;
 
+import java.text.SimpleDateFormat;
+import java.util.Locale;
+
 public abstract class Product implements Buyable {
     protected String name;
     protected Double price;
