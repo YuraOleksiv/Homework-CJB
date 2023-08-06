@@ -24,6 +24,10 @@ public class Customer {
         return balance;
     }
 
+    public void setBalance(Double balance) {
+        this.balance = balance;
+    }
+
     @Override
     public String toString() {
         return "Customer{" +
